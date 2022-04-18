@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	font-family: calibri;
+	background-color: #818181;
+	direction: ltr;
+}
+
+
+::selection{
+	background-color: #000;
+	color: #FFC600;
+}
+
+
+.header{
+	width: 100%;
+	text-align: center;
+}
+
+
+.menu{
+	position: sticky;
+	top: 0;
+}
+.menu ul{
+    display: flex;
+	justify-content: space-around;
+    list-style-type: none;
+    margin: 2%;
+	padding-left: 0;
+	background-color: #161616;
+	border-radius: 3px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #D3D3D3;
+    padding: 15px 30px;
+    transition: all ease 0.2s;
+    display: block;
+}
+.menu li:hover a{
+	color: #FFC600;
+	background-color: #000;
+	border-left: 3px solid #FFC600;
+}
+
+
+.container{
+	display: flex;
+    justify-content: space-around;
+}
+.container .text{
+    margin-top: 6%;
+    width: 60%;
+    border-left: 5px solid #FFC600;
+    padding-left: 10px;
+    background-color: darkgray;
+    line-height: 36px;
+    height: fit-content;
+	overflow: hidden;
+}
+.container .img{
+    margin-top: 5%;
+	max-width: 30%;
+}
+.container .img img{
+    height: 350px;
+    border: 5px solid #5F5F5F;
+    border-radius: 20px;
+    width: 300px;
+}
+
+
+.box_skills{
+    width: 90%;
+    background-color: #B7B7B7;
+    border-radius: 10px;
+    margin-top: 5%;
+	margin-left: 5%;
+	box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+.box_skills .header{
+	display: flex;
+    justify-content: center;
+}
+.box_skills .header h2{
+    margin-top: 5px;
+	padding: 0 20px;
+	letter-spacing: 2px;
+}
+.box_skills .header img{
+    width: 30px;
+    height: 30px;
+	margin-top: 5px;
+}
+.box_skills .box{
+	padding: 10px 15px 5px;
+}
+.box_skills .skill{
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3px;
+	font-weight: bold;
+}
+.box_skills .bar{
+    border-radius: 20px;
+	margin-bottom: 25px;
+    border: 2px solid #818181;
+}
+.box_skills .bar div{
+
+	width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #FFD600;
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 100%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+#flex-bar{
+	animation: flex-fill 2s forwards;
+}
+@keyframes flex-fill{
+	100%{
+		width: 100%;
+	}
+}
+#python-bar{
+	animation: py-fill 2s forwards;
+}
+@keyframes py-fill{
+	100%{
+		width:80%;
+	}
+}
+#linux-bar{
+	animation: linux-fill 2s forwards;
+}
+@keyframes linux-fill{
+	100%{
+		width: 60%
+	}
+}
+#network-bar{
+	animation: net-fill 2s forwards;
+}
+@keyframes net-fill{
+	100%{
+		width: 80%
+	}
+}
+#ceh-bar{
+	animation: ceh-fill 2s forwards;
+}
+@keyframes ceh-fill{
+	100%{
+		width: 90%
+	}
+}
+#bootstrap-bar{
+	animation: boot-fill 2s forwards;
+}
+@keyframes boot-fill{
+	100%{
+		width: 90%
+	}
+}
+.box_skills .box .skill .html:hover{
+	color: #EF6C00;
+}
+.box_skills .box .skill .css:hover{
+	color: #D50000;
+}
+.box_skills .box .skill .flex:hover{
+	color: #FF3D00;
+}
+.box_skills .box .skill .py:hover{
+	color: #ffc600;
+}
+.box_skills .box .skill .linux:hover{
+	color: #607D8B;
+}
+.box_skills .box .skill .net:hover{
+	color: #1E88E5;
+}
+.box_skills .box .skill .ceh:hover{
+	color: #6D4C41;
+}
+.box_skills .box .skill .boot:hover{
+	color: #00B0FF;
+}
+
+
+.footer{
+	width: 100%;
+	height: auto;
+	border-top: 3px solid #ffc600;
+	margin-top: 6%;
+	background-color: #616161;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+.footer .contact{
+	width: 50%;
+	padding: 5px 15px 5px;
+}
+.footer .contact p{
+	display: flex;
+    align-items: center;
+	font-size: 19px;
+	padding: 15px 5px 10px;
+}
+.footer .contact img{
+    margin-right: 10px;
+}
+.footer .media{
+	display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+    padding: 5px 15px 5px;
+}
+.footer .media .button{
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgb(0 0 0 / 50%);
+  transition: all 0.3s ease-out;
+  margin: 5px 5px;
+}
+.footer .media .button:hover{
+    width: 200px;
+}
+.footer .media .button .icon{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 53px;
+  transition: all 0.3s ease-out;
+}
+.footer .media .button:nth-child(1):hover .icon{
+    background: #C13584;
+}
+.footer .media .button:nth-child(2):hover .icon{
+	background: #6A6A6A
+}
+.footer .media .button:nth-child(3):hover .icon{
+  background: #008CFF;
+}
+.footer .media .button:nth-child(4):hover .icon{
+  background: #ECEAEA;
+}
+.footer .media .button .icon i{
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+}
+.footer .media .button:hover .icon i{
+    color: #fff;
+}
+.footer .media .button:hover .icon #telegram{
+	color: #007CFF
+}
+.footer .media .button a{
+    margin-left: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+.footer .media .button:nth-child(1) a{
+  color: #C13584;
+}
+.footer .media .button:nth-child(2) a{
+  color: #6A6A6A;
+}
+.footer .media .button:nth-child(3) a{
+  color: #008CFF;
+}
+.footer .media .button:nth-child(4) a{
+  color: #007CFF;
+}
+
+
+/*responsive*/
+@media only screen and (max-width:1065px){
+	.container .img{
+		margin-top: 9%;
+	}
+}
+@media only screen and (max-width:945px){
+	.container {
+		display: block;
+	}
+	.container .img{
+		margin-left: 28%;
+		margin-top: 5%;
+	}
+	.container .img img{
+		width: 350px;
+	}
+	.container .text{
+		margin-left: 5%;
+		width: 88%;
+	}
+}
+@media only screen and (max-width:810px){
+		.container .img{
+		    margin-left: 24%;
+	}	
+	}
+@media only screen and (max-width:740px){
+/*	start responsive menu*/
+	.menu{
+		position: inherit;
+	}
+	.menu ul {
+		display: block;
+		text-align: center;
+	}
+/*	end responsive menu*/
+/*	start responsive container*/
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.container .img{
+        margin-right: 45%;
+	}
+	.container .img img{
+		width: 350px;
+	}
+	.container .text{
+		width: 86%;
+		margin-left: 0%;
+	}
+/*	end responsive container*/
+}
+@media only screen and (max-width:660px){
+	.container .img{
+        margin-right: 55%;
+	}
+}
+@media only screen and (max-width:580px){
+	.container .img{
+        margin-right: 65%;
+	}
+}
+@media only screen and (max-width:500px){
+	.container .img{
+        margin-right: 73%;
+	}
+	.footer .media {
+		width: 39%
+	}
+}
+
+
