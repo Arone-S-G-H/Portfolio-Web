@@ -19,6 +19,21 @@ body{
 	width: 100%;
 	text-align: center;
 }
+.header:hover {
+	animation: animateColors 3s infinite;
+}
+@keyframes animateColors {
+	10% { color: red; }
+	20% { color: orangered;}
+	30% { color: orange;}
+	40% { color: yellow;}
+	50% { color: rgb(115, 255, 0);}
+	60% { color: green }
+	70% { color: rgb(0, 255, 242) }
+	80% { color: blue }
+	90% { color: purple }
+	100% { color: palevioletred; }
+}
 
 
 .menu{
@@ -370,6 +385,14 @@ body{
 @media only screen and (max-width:500px){
 	.container .img{
         margin-right: 73%;
+	}
+	.footer .media {
+		width: 39%
+	}
+}
+@media only screen and (max-width:413px){
+	.container .img{
+        margin-right: 85%;
 	}
 	.footer .media {
 		width: 39%
